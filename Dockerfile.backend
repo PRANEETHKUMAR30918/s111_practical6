@@ -7,7 +7,7 @@
     RUN apt-get update && apt-get install -y git
     
     # Clone your backend repo
-    RUN git clone https://github.com/PRANEETHKUMAR30918/s111_practical6_backend.git
+    RUN git clone https://github.com/PRANEETHKUMAR30918/s111_practical6_backend.git .
     RUN mvn clean package -DskipTests
 
     # Stage 2: Run with Tomcat
